@@ -83,4 +83,12 @@ public class ProductController
 		response.setError(null);
 		return response;
 	}
+	
+	@GetMapping("v2/products")
+	public Message version2()
+	{
+		Message message =new Message();
+		message.setMessage("Hello there");
+		return message;
+	}
 }
